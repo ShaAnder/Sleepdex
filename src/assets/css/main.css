@@ -1,0 +1,49 @@
+.app {
+  display: block;
+  font-family: "Flexo-Regular", arial, sans-serif;
+}
+
+body {
+  line-height: 1;
+  font-size: 16px;
+  height: 100%;
+}
+
+div.sleepdex-container {
+  margin-top: 100px;
+  font-size: 15px;
+  height: 100%;
+}
+
+div.pokedex-results {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: disc;
+  padding: 30px;
+}
+
+div.results {
+  display: inline-block;
+}
+
+img.pokemon-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.berries {
+  margin-top: 100px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.pokemon-card {
+  margin: 5px;
+}

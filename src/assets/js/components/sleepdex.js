@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { shuffle } from "../helpers/Shuffle";
 import { Button } from "../ui/button";
-import { PokemonContainer } from "./pokemoncontainer";
+import { PokemonContainer } from "./pokemoncomponents/pokemoncontainer";
+import { PokemonTable } from "./pokemoncomponents/pokemontable";
 
 export function SleepDex({ pokemonList, setPokemonList }) {
   // create our state for sorting the pokemon
@@ -60,25 +61,16 @@ export function SleepDex({ pokemonList, setPokemonList }) {
           <option value="nameD">Z-A</option>
         </select>
       </div>
-      <div>
-        <ul>
-          {!showMorePokemon
-            ? sortedPokemon
-                .slice(0, 12)
-                .map((pokemon) => (
-                  <PokemonContainer pokemon={pokemon} key={pokemon.id} />
-                ))
-            : sortedPokemon.map((pokemon) => (
-                <PokemonContainer pokemon={pokemon} key={pokemon.id} />
-              ))}
-        </ul>
 
-        {!showMorePokemon && (
-          <Button onClick={() => setShowMorePokemon(!showMorePokemon)}>
-            Show More
-          </Button>
-        )}
-      </div>
+      <PokemonTable>
+        {!showMorePokemon
+          ? sortedPokemon.map((pokemon) => (
+              <PokemonContainer pokemon={pokemon} key={pokemon.id} />
+            ))
+          : sortedPokemon.map((pokemon) => (
+              <PokemonContainer pokemon={pokemon} key={pokemon.id} />
+            ))}
+      </PokemonTable>
     </div>
   );
 }

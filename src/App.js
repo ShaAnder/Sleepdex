@@ -8,34 +8,17 @@ import { testPokemon } from "./assets/js/testdata/testpokemon.js";
 
 // components
 import { NavBar } from "./assets/js/components/navbar";
-import { SleepDex } from "./assets/js/components/sleepdex";
+import { SleepDex } from "./assets/js/components/sleepdex.js";
+import { Filter } from "./assets/js/components/filter.js";
 
 function App() {
-  const [advancedFilter, setAdvancedFilter] = useState(false);
   const [pokemon, setPokemon] = useState(testPokemon);
   return (
     <div className="App">
-      <span>
-        <NavBar />
-      </span>
-      <span>
-        {advancedFilter && <AdvancedFilter />}
-        <SleepDex pokemonList={pokemon} setPokemonList={setPokemon} />
-        <ItemSkillContainer />
-        <Calculator />
-      </span>
-      <span>
-        <Footer />
-      </span>
-    </div>
-  );
-}
-
-// advanced search
-function AdvancedFilter() {
-  return (
-    <div>
-      <ul className="berries"></ul>
+      <NavBar />
+      <Filter />
+      <SleepDex pokemonList={pokemon} setPokemonList={setPokemon} />
+      <Footer />
     </div>
   );
 }

@@ -54,6 +54,23 @@ export const testPokemon = [
     },
   },
   {
+    entry: "002",
+    name: "Ivybasaur",
+    get image() {
+      return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.entry}.png`;
+    },
+
+    details: {
+      sleepStyle: "Dozing",
+      specialty: "Ingredients",
+      mainSkill: "Ingredient Magnet S",
+      berry: durin,
+      ingredient1: honey,
+      ingredient2: potato,
+      ingredient3: tomato,
+    },
+  },
+  {
     entry: "010",
     name: "Caterpie",
     get image() {

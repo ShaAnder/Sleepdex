@@ -1,22 +1,27 @@
 import { useState } from "react";
 
 // Berries Container
-export function Berries({ filterOptions }) {
+export function Berries({
+  filterOptions,
+  selectedBerries,
+  setSelectedBerries,
+}) {
+  // set our active berry, this is just for css styling to allow the berry to be toggled on or off
   const [activeBerry, setActiveBerry] = useState(false);
-  const [selectedBerries, setSelectedBerries] = useState([]);
-  function handleToggleBerry() {
-    setActiveBerry((activeBerry) => !activeBerry);
-    setSelectedBerries(filterOptions.name);
-    console.log(selectedBerries);
-  }
 
-  // trying to get us to save the berry name in state for filtering
-  function handleSelectedBerry() {
-    if (!selectedBerries.filter((e) => e.name !== filterOptions.name))
-      setSelectedBerries((selectedBerries) => [
-        ...selectedBerries,
-        filterOptions.name,
-      ]);
+  let berries = [];
+
+  function handleActiveBerry(e) {
+    // toggles the berry on or off
+    setActiveBerry((activeBerry) => !activeBerry);
+    console.log(selectedBerries);
+    if (!activeBerry) {
+      setSelectedBerries([...selectedBerries, e]);
+    } else {
+      setSelectedBerries((selectedBerries) =>
+        selectedBerries.filter((item) => item.e !== item.e)
+      );
+    }
   }
 
   return (
@@ -24,7 +29,7 @@ export function Berries({ filterOptions }) {
       <ul className={!activeBerry ? "berries" : "berries-activated"}>
         <img
           value={filterOptions.name}
-          onClick={handleToggleBerry}
+          onClick={() => handleActiveBerry(filterOptions.name)}
           src={filterOptions.image}
           width={20}
           height={20}

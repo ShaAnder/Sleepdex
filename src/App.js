@@ -13,6 +13,7 @@ import { Filter } from "./assets/js/components/filter.js";
 
 function App() {
   const [pokemon, setPokemon] = useState(testPokemon);
+
   return (
     <div className="App">
       <NavBar />

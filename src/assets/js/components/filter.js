@@ -8,7 +8,8 @@ import { Berries } from "./filtercomponents/Berries";
 export function Filter() {
   // filter options
   const [filterOptions, setFilterOptions] = useState(testFilter);
-  // filter open true / false state
+  // Berry filter
+  const [selectedBerries, setSelectedBerries] = useState([]);
 
   let berries;
 
@@ -16,7 +17,12 @@ export function Filter() {
     <>
       <div className="filter-berries">
         {filterOptions.berries.map((filterOptions) => (
-          <Berries filterOptions={filterOptions} key={filterOptions.id} />
+          <Berries
+            selectedBerries={selectedBerries}
+            setSelectedBerries={setSelectedBerries}
+            filterOptions={filterOptions}
+            key={filterOptions.id}
+          />
         ))}
       </div>
     </>

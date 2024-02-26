@@ -9,18 +9,23 @@ export function Berries({
   // set our active berry, this is just for css styling to allow the berry to be toggled on or off
   const [activeBerry, setActiveBerry] = useState(false);
 
-  let berries = [];
+  const deleteBerries = (berryName) => {
+    setSelectedBerries((selectedBerries) =>
+      selectedBerries.filter((selectedName) => {
+        return selectedName !== berryName;
+      })
+    );
+  };
 
   function handleActiveBerry(e) {
     // toggles the berry on or off
     setActiveBerry((activeBerry) => !activeBerry);
-    console.log(selectedBerries);
     if (!activeBerry) {
+      console.log(filterOptions.name);
       setSelectedBerries([...selectedBerries, e]);
-    } else {
-      setSelectedBerries((selectedBerries) =>
-        selectedBerries.filter((item) => item.e !== item.e)
-      );
+    }
+    if (activeBerry) {
+      deleteBerries(filterOptions.name);
     }
   }
 

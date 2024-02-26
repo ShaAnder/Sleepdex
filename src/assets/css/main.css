@@ -39,10 +39,16 @@ img.pokemon-img {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
-.filter-berries-item {
+.filter-ingredients {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.filter-item {
   padding-left: 0.2%;
   padding-right: 0.2%;
 }
@@ -58,6 +64,18 @@ img.pokemon-img {
 }
 
 .berries-activated {
+  opacity: 1;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.ingredients {
+  padding: 5px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.ingredients-activated {
   opacity: 1;
   padding: 5px;
   cursor: pointer;

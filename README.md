@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p  align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="120%">
+    
+<h1  align="center">Sleepdex</h1>
 
-## Available Scripts
+<p  align="center">
+<img src="https://github.com/ShaAnder/address_book_react/assets/129494996/dd8e0d83-6509-42e0-80b5-3a1321ee1660" alt="project image" height="200px">
+    
+<p align="center">
+  <img src="https://img.shields.io/badge/version-0.0.1-orange.svg?cacheSeconds=2592000" />
+  <a href="" target="_blank">
+    <img alt="Demo" src="https://img.shields.io/badge/demo-offline-red.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/Sleepdex#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/Sleepdex/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/Sleepdex/blob/main/LICENSE" target="_blank">
+    <img alt="License: GPL3" src="https://img.shields.io/badge/License-GPL3-yellow.svg" />
+  </a>
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+<h2 class="header2">Description</h2>
+<p class="text-content">
+A mid level react project utilizing react principles to create a pokemon sleep pokedex style website. The aim of this website is to allow users to view and sort the available pokemon. Features will also include a calculator to check the grade of the pokemon based on their stats as well as weekly recommendations based on the beerries / cooking options the user gets. 
+  
+Currently the project has a long way to go and only basic sortign is implemented as of now.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Prerequisites</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h4>Languages Used</h4>
+- JavaScript<br>
+- CSS3<br>
+- HTML5<br>
+- React
 
-### `npm test`
+<h4>API</h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<h4>Packages</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Installation</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+First clone this repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+git clone
+```
+NPM install to get the dependancies
 
-### `npm run eject`
+```sh
+npm install 
+```
+Use npm start to start the local server / test the app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h2>Contributing</h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Got any issues or see any problems with the code? Check here:<br>
+[Issue Tracker](github.com/Sleepdex/issues)
 
-## Learn More
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2>License</h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This Project Is MIT Licensed
 
-### Code Splitting
+<h2>Credits</h2>
+- Originally A follow along from the Ultimate React Course by Jonas Schmedtmann, however was adapted heavily to create my own unique app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<h2>Contact</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[LinkedIn](https://www.linkedin.com/in/shaun-anderton-551670a9/)<br>
+[Twitter](https://twitter.com/ShaAnder10)<br>
+[Github](https://github.com/ShaAnder)
 
-### Making a Progressive Web App
+<p  align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="120%">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

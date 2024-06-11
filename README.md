@@ -72,11 +72,9 @@ Got any issues or see any problems with the code? Check here:<br>
 
 <h2>License</h2>
 
-This Project Is MIT Licensed
+This Project Is GPL3 Licensed
 
 <h2>Credits</h2>
-- Originally A follow along from the Ultimate React Course by Jonas Schmedtmann, however was adapted heavily to create my own unique app
-
 
 <h2>Contact</h2>
 
